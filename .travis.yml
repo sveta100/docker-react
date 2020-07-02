@@ -4,7 +4,7 @@ before-install:
     - docker build -t docker-react-img -f Dockerfile.dev .
 
 script:
-    - docker run docker-react-img npm run start -- --coverage
+    - docker run docker-react-img npm run test -- --coverage
 
 deploy:
     provider: elasticbeanstalk
