@@ -1,6 +1,6 @@
 services:
     - docker
-before-install: 
+before_install: 
     - docker build -t docker-react-img -f Dockerfile.dev .
 
 script:
